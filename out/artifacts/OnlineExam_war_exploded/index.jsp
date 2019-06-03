@@ -39,7 +39,7 @@
             <el-divider direction="vertical"></el-divider>
             <a href="adenglu.jsp">管理员登录</a>
             <el-divider direction="vertical"></el-divider>
-            <a href="#">关于我们</a>
+            <a href="http://188.131.244.33:8080/Work2">四则运算</a>
             <el-divider direction="vertical"></el-divider>
         </div>
     </div>
