@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ 	<class name="com.gemini.exam.testnote.entity.TestNote" table="testnote">
+ 		<id name="tnid" column="tnid">
+ 			<generator class="native"/>
+ 		</id>
+ 		<property name="tname" column="tname"/>
+ 		<property name="tdate" column="tdate"/>
+ 		<property name="stime" column="stime"/>
+ 		<property name="etime" column="etime"/>
+ 		<property name="score" column="score"></property>
+ 		<many-to-one name="students" class="com.gemini.exam.student.entity.Students" column="sid"></many-to-one>
+ 		<many-to-one name="questionPaper" class="com.gemini.exam.questionpaper.entity.QuestionPaper" column="qpid"></many-to-one>
+ 		<set name="answerState" lazy="false" cascade="save-update,delete">
+ 			<key column="tnid"></key>
+ 			<one-to-many class="com.gemini.exam.answerstate.entity.AnswerState"/>
+ 		</set>
+ 	</class>
+ </hibernate-mapping>

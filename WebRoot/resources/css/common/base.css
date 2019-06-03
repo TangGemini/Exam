@@ -1,0 +1,85 @@
+/* 本css为公共配置 */
+
+/* 通用样式 */
+
+body, html {
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+#app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    /* margin-top: 60px; */
+}
+
+a {
+    color: #2c3e50;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #409EFF;
+}
+
+.itemDiv {
+    margin: 20px auto 50px;
+}
+
+div {
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 导航栏 */
+
+/* PC端样式 */
+
+@media screen and (min-width: 768px) {
+    #navigation {
+        width: 100%;
+    }
+    #navigation span {
+        color: #2c3e50;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+/* 移动端样式 */
+
+@media screen and (max-width: 768px) {
+    #navigation {
+        width: 100%;
+    }
+    #mobileNav {
+        padding: 0;
+    }
+    #mobileNav h4{
+        color: #2c3e50;
+    }
+    .navList {
+        display: inline-block;
+        width: 100%;
+        margin: 6px auto 0;
+    }
+    .el-divider, .el-divider--horizontal {
+        margin: 2px auto;
+    }
+}

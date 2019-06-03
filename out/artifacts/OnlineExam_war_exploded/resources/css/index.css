@@ -1,0 +1,66 @@
+/* 本css为主页面index.html 配置 */
+/* 背景图 */
+body{
+    background-image: url(../../resources/images/common/背景.jpg) ;
+    background-size: cover;
+}
+/* 导航栏统一注入*/
+.nav_content{
+    opacity: 0.75;
+    background-color:whitesmoke;
+    text-align: left;  
+    padding: 10px 0;;
+}
+.navLeft{
+    display: inline-block;
+    margin:0 auto 0 40px;
+    vertical-align: middle;
+}
+.navRight{
+    display: inline-block;
+    margin:0 auto 0 18%;
+}
+.navRight a{
+    margin:0 25px;
+    font-size:20px;
+}
+/* 用戶姓名显示区 */
+.user_show{
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    margin:50px auto 0 80px;
+}
+.user_show img{
+    width:70px;
+    height: 70px;
+}
+/* 主要内容区 */
+.main_content{
+    border-radius:20px;
+    opacity:0.8;
+    width:80%;
+    margin:50px auto 100px auto;
+    font-size: 35px;
+    font-weight: 500;
+}
+.main_content img{
+    height:70%;
+    width:70%;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+.row-bg{
+    margin-top: 40px;
+}
+.row-bg-first{
+    margin-bottom: 70px;
+    margin-top:20px;
+}
+.el-icon-time{
+    display: inline-block;
+}
+/* 底部统一注入 */
+#footer{
+   margin:40px auto;
+}
